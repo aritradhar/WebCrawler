@@ -37,7 +37,7 @@ public class MorrisonCrawler
 		FileWriter fw = null;
 		try 
 		{
-			fw = new FileWriter("MorrisonsTaxonomyTree_HouseHold.txt");
+			fw = new FileWriter("MorrisonsTaxonomyTree_Flower.txt");
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -45,7 +45,7 @@ public class MorrisonCrawler
 		
 		ENV.setProxy();
 		
-		File input = new File("C:\\Users\\w4j3yyfd\\Desktop\\Morrisons Taxonomy trees\\MG_Household.html");
+		File input = new File("C:\\Users\\w4j3yyfd\\Desktop\\Morrisons Taxonomy trees\\MG_Flower.html");
 		Document document = null;
 		try 
 		{
@@ -180,10 +180,12 @@ public class MorrisonCrawler
 		    }
 		}
 		
-		try {
+		try 
+		{
 			fw.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
+		} 
+		catch (IOException e) 
+		{
 			e.printStackTrace();
 		}
 		
